@@ -29,8 +29,8 @@ dirpersistrestore () {
     fi
 }
 
-DIRSTACKSIZE=10
-setopt autopushd pushdminus pushdsilent pushdtohome pushdignoredups
+DIRSTACKSIZE=20
+setopt pushdminus pushdsilent pushdtohome pushdignoredups
 
 dirpersistinstall
 dirpersistrestore
