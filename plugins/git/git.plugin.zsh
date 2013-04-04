@@ -10,8 +10,11 @@ compdef _git gup=git-fetch
 alias gp='git push'
 compdef _git gp=git-push
 alias gd='git diff'
+compdef _git gd=git-diff
 gdv() { git diff -w "$@" | view - }
 compdef _git gdv=git-diff
+alias gdc='git diff --cached'
+compdef _git gdc=git-diff
 alias gc='git commit'
 compdef _git gc=git-commit
 alias gca='git commit -a'
