@@ -18,7 +18,7 @@ else
   zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}' 'r:|[._-]=* r:|=*' 'l:|=* r:|=*'
 fi
 
-zstyle ':completion:*' list-colors ''
+zstyle -e ':completion:*:default' list-colors 'reply=("${PREFIX:+=(#bi)($PREFIX:t)(?)*==00=01;31}:${(s.:.)LS_COLORS}")'
 
 # should this be in keybindings?
 bindkey -M menuselect '^o' accept-and-infer-next-history
